@@ -9,7 +9,7 @@ Assignment 01
 session_start();
 
 $valid_credentials = array(
-    "username" => "password"
+    "Troy" => "Johnson20#1"
 );
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
