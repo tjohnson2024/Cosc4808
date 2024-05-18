@@ -9,16 +9,16 @@ Assignment 01
 session_start();
 
 $valid_credentials = array(
-    "Troyj" => "Johnson20#1"
+    "username" => "password"
 );
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = isset($_POST['Troyj']) ? $_POST['Troyj'] : "";
-    $password = isset($_POST['Johnson20#1']) ? $_POST['Johnson20#1'] : "";
+    $username = isset($_POST['username']) ? $_POST['username'] : "";
+    $password = isset($_POST['password']) ? $_POST['password'] : "";
 
     if (isset($valid_credentials[$username]) && $valid_credentials[$username] === $password) {
         $_SESSION['authenticated'] = true;
-        $_SESSION['Troyj'] = $username; // Set the username in the session
+        $_SESSION['username'] = $username; // Set the username in the session
         header("Location: index.php");
         exit;
     } else {
