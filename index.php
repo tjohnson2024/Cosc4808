@@ -3,7 +3,7 @@
 /*
    Troy Johnson
    COSC-4808
-   Assignment 01 
+   Assignment #1
 */
 
 session_start();
