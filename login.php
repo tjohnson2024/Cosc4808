@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login</title>
 </head>
 <body>
-    <h2>Login</h2>
+    <h2>Login form</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username"><br>
