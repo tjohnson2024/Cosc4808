@@ -1,4 +1,11 @@
 <?php
+
+/*
+   Troy Johnson
+   COSC-4808
+   Assignment 01 
+*/
+
 session_start();
 
 if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
