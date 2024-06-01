@@ -12,8 +12,4 @@ catch (PDOException $e){
   
 }
 }
-
-
-
-
 ?>
