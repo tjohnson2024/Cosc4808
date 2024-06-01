@@ -1,10 +1,10 @@
 <?php
 
+
 /*
    Troy Johnson
    COSC-4808
    Assignment #1
-*/
 
 session_start();
 
@@ -30,3 +30,20 @@ $currentTime = date("l, F jS Y \- g:i a");
     <a href="logout.php">Logout</a>
 </body>
 </html>
+*/
+?>
+
+
+<?php
+require_once ('user.php');
+
+
+$user = new User();
+// Register a new user
+$registration_result = $user->create_user("example_user", "password123");
+echo $registration_result . "\n";
+
+// Attempt to login with the registered user
+$login_result = $user->login("example_user", "password123");
+echo $login_result . "\n";
+?>
